@@ -617,3 +617,151 @@ footer a:hover {
         animation-iteration-count: 1 !important;
     }
 }
+
+
+/* FILMES E DUBLAGENS */
+#filmes-dublagens {
+    margin: 35px 0;
+    padding: 30px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffaf0, #f5e5c9);
+    border: 1px solid #d5b36a;
+    box-shadow: 0 5px 15px rgba(70, 30, 30, 0.10);
+}
+
+#filmes-dublagens > h2 {
+    text-align: center;
+    color: #762d3c;
+    border-bottom: 2px solid #d5b36a;
+    padding-bottom: 14px;
+}
+
+.introducao-secao {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.bloco-filmes,
+.bloco-vozes {
+    margin-top: 30px;
+}
+
+.bloco-filmes h3,
+.bloco-vozes h3 {
+    color: #762d3c;
+    margin-bottom: 18px;
+}
+
+.cartoes-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+.cartao-filme {
+    background: #fffdf8;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e3cfaa;
+    box-shadow: 0 3px 9px rgba(70, 30, 30, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cartao-filme:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 16px rgba(70, 30, 30, 0.14);
+}
+
+.icone-filme {
+    font-size: 30px;
+}
+
+.cartao-filme h4 {
+    color: #762d3c;
+    margin: 12px 0 6px;
+}
+
+.ano-filme {
+    color: #a17b35;
+    font-weight: bold;
+}
+
+.cartao-filme p {
+    line-height: 1.6;
+}
+
+.curiosidade-filme {
+    margin-top: 22px;
+    padding: 18px;
+    background: #f4e4c3;
+    border-left: 5px solid #b58b42;
+    border-radius: 8px;
+}
+
+.curiosidade-filme h4 {
+    color: #762d3c;
+    margin-top: 0;
+}
+
+.subtitulo-vozes {
+    color: #762d3c;
+    margin: 26px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddc69d;
+}
+
+.lista-vozes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.cartao-voz {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background: #fffdf8;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #e3cfaa;
+    border-left: 4px solid #a34b5c;
+}
+
+.cartao-voz strong {
+    color: #762d3c;
+}
+
+.cartao-voz span {
+    color: #594642;
+}
+
+.nota-vozes {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ddc69d;
+    font-size: 0.92em;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    #filmes-dublagens {
+        padding: 18px;
+    }
+
+    .cartoes-filmes,
+    .lista-vozes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cartao-filme {
+        transition: none;
+    }
+
+    .cartao-filme:hover {
+        transform: none;
+    }
+                                }
+   
