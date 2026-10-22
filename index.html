@@ -23,7 +23,7 @@
   <!-- OVERLAY / MÁSCARA DE FUNDO -->
   <div id="overlay" class="overlay"></div>
 
-  <!-- MENU LATERAL ENCANTADO -->
+  <!-- MENU LATERAL ENCANTADO (DO LADO ESQUERDO) -->
   <nav id="sidebar" class="sidebar">
     <div class="sidebar-header">
       <h2>🌹 Menu Encantado</h2>
@@ -32,36 +32,41 @@
     <ul class="nav-links">
       <li><a href="#Inicio">🏰 Início</a></li>
       <li><a href="#Sobre-o-Filme">📖 Sobre o Filme</a></li>
-      <li><a href="#Personagens">👑 Personagens</a></li>
-      <li><a href="#Rosa-Encantada">🌹 Rosa Encantada</a></li>
-      <li><a href="#O-Castelo-Encantado">🏰 Castelo Encantado</a></li>
-      <li><a href="#Trilha-Sonora">🎵 Trilha Sonora</a></li>
-      <li><a href="#Filmes-Dublagens">🎬 Filmes e Dublagens</a></li>
+      <li><a href="#Personagens">👑 Personagens Principais</a></li>
       <li><a href="#Quiz">💫 Faça o Quiz</a></li>
-      <li><a href="#Conclusao">💗 Conclusão</a></li>
+      <li><a href="#O-Castelo-Encantado">🏰 Castelo Encantado</a></li>
+      <li><a href="#Rosa-Encantada">🌹 Rosa Encantada</a></li>
+      <li><a href="#Filmes-Dublagens">🎬 Filmes e Séries</a></li>
+      <li><a href="#Trilha-Sonora">🎵 Trilha Sonora</a></li>
       <li><a href="#Moral-da-Historia">⭐ Moral da História</a></li>
+      <li><a href="#Conclusao">💗 Conclusão</a></li>
     </ul>
   </nav>
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="container">
+
+    <!-- 1. CABEÇALHO -->
     <header class="cabecalho">
       <div class="header-badge">✨ Clássico Disney ✨</div>
       <h1>A Bela e a Fera</h1>
       <p class="subtitulo">A história de amor e transformação mais encantadora de todos os tempos</p>
     </header>
 
+    <!-- 2. INÍCIO -->
     <section id="Inicio" class="card-section">
       <h2>🏰 Início</h2>
       <p>Beauty and the Beast (Bela e a Fera) é uma obra clássica da animação que encanta gerações ao combinar romance, fantasia e importantes lições sobre empatia e respeito. A história acompanha Bela, uma jovem inteligente e sonhadora, que encontra um misterioso príncipe amaldiçoado a viver na forma de uma fera até que aprenda o verdadeiro significado do amor.</p>
       <p>Com uma narrativa envolvente, personagens marcantes e uma trilha sonora inesquecível, o filme destaca valores como a beleza interior, a coragem e a importância de enxergar além das aparências. Reconhecido mundialmente, o longa tornou-se um dos maiores sucessos da animação e permanece como uma referência atemporal do cinema familiar.</p>
     </section>
 
+    <!-- 3. SOBRE O FILME -->
     <section id="Sobre-o-Filme" class="card-section">
       <h2>📖 Sobre o Filme</h2>
       <p>A Bela e a Fera é um filme que conta a história de Bela, uma jovem inteligente e bondosa que vive em uma pequena aldeia. Sua vida muda quando ela passa a morar no castelo de uma Fera, que na verdade é um príncipe enfeitiçado. Com o tempo, Bela aprende a enxergar além da aparência e descobre a bondade que existe dentro dele. O filme transmite importantes mensagens sobre amor, respeito, amizade e a importância de valorizar o que há no coração das pessoas.</p>
     </section>
 
+    <!-- 4. PERSONAGENS PRINCIPAIS -->
     <section id="Personagens" class="card-section">
       <h2>👑 Personagens Principais</h2>
       <p>Clique abaixo no nome de cada personagem para expandir e descobrir seus detalhes, dubladores e curiosidades:</p>
@@ -168,97 +173,10 @@
       </div>
     </section>
 
-    <!-- ROSA ENCANTADA INTERATIVA -->
-    <section id="Rosa-Encantada" class="card-section rosa-section">
-      <h2>🌹 A Rosa Encantada Interativa</h2>
-      <p class="section-desc">A rosa encantada dentro da cúpula de vidro representa o tempo que resta ao príncipe. Clique no botão abaixo para interagir com a rosa e ver as pétalas caindo uma a uma conforme o tempo da maldição avança!</p>
-
-      <div class="rose-interactive-container">
-        <!-- Cúpula de Vidro Mágica criada em CSS -->
-        <div class="dome-wrapper">
-          <div class="glass-dome">
-            <div class="sparkles-bg"></div>
-            <div class="rose-display">
-              <div class="rose-flower">
-                <div class="petal petal-center"></div>
-                <div id="petal-left" class="petal petal-left"></div>
-                <div id="petal-right" class="petal petal-right"></div>
-                <div id="petal-bottom" class="petal petal-bottom"></div>
-              </div>
-              <div class="rose-stem"></div>
-              <div class="rose-leaf leaf-left"></div>
-              <div class="rose-leaf leaf-right"></div>
-            </div>
-            <!-- Pétalas caindo -->
-            <div id="fallen-petal-container" class="fallen-petals"></div>
-          </div>
-          <div class="dome-base"></div>
-        </div>
-
-        <div class="rose-controls">
-          <div class="petals-counter">
-            <span>Pétalas Restantes:</span>
-            <strong id="petals-count">4</strong>
-          </div>
-          <p id="rose-stage-description" class="rose-stage-text">Etapa 1: A maldição foi lançada! A rosa brilha intensamente no topo do castelo.</p>
-
-          <button id="drop-petal-btn" class="btn-rose">🌹 Deixar uma Pétala Cair</button>
-          <button id="reset-rose-btn" class="btn-rose-secondary">🔄 Restaurar a Rosa</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="O-Castelo-Encantado" class="card-section">
-      <h2>🏰 O Castelo Encantado</h2>
-      <p>O castelo encantado é um dos elementos mais fascinantes da história. Após a maldição, o lugar que antes era cheio de vida tornou-se isolado e misterioso. Seus corredores longos, salões luxuosos e jardins abandonados criam uma atmosfera mágica e ao mesmo tempo melancólica.</p>
-      <p>Os empregados do castelo foram transformados em objetos domésticos, mas mantiveram suas personalidades e esperanças. Quando Bela chega, o castelo ganha uma nova energia, tornando-se um espaço de amizade, aprendizado e transformação. O ambiente encantado simboliza a mudança interior da Fera e a possibilidade de redenção por meio do amor e da bondade.</p>
-    </section>
-
-    <section id="Trilha-Sonora" class="card-section">
-      <h2>🎵 Trilha Sonora Inesquecível</h2>
-      <p>A trilha sonora de A Bela e a Fera é considerada uma das mais memoráveis da história do cinema de animação. As músicas ajudam a desenvolver a narrativa e transmitir emoções profundas ao público. Clique no nome de cada música para ouvi-la no YouTube:</p>
-      <div class="music-cards">
-        <div class="music-card">
-          <h4><a href="https://youtu.be/3fbxlNAVa6c?is=0i2Fdfty4OM1_zcA" target="_blank" rel="noopener noreferrer">🎶 "Belle"</a></h4>
-          <p>Apresenta a protagonista e reflete seu desejo por algo maior do que a rotina da aldeia.</p>
-        </div>
-        <div class="music-card">
-          <h4><a href="https://youtu.be/jeDQkqaqfpQ?is=Pu6onBqdk6Wo1CE3" target="_blank" rel="noopener noreferrer">🎶 "Be Our Guest"</a></h4>
-          <p>Uma celebração alegre e contagiante da hospitalidade dos moradores do castelo.</p>
-        </div>
-        <div class="music-card">
-          <h4><a href="https://youtu.be/hv2lCmRXvtY?feature=shared" target="_blank" rel="noopener noreferrer">🎶 "Beauty and the Beast"</a></h4>
-          <p>A emocionante canção-tema que embala a dança do casal no lendário salão de baile.</p>
-        </div>
-      </div>
-      <p>Composta por Alan Menken e Howard Ashman, a trilha sonora conquistou diversos prêmios Oscar e Grammys, marcando épocas.</p>
-    </section>
-
-    <section id="Filmes-Dublagens" class="card-section">
-      <h2>🎬 Filmes, Séries e Adaptações</h2>
-      <div class="adaptacoes-grid">
-        <div class="adapt-item">
-          <h3>✨ Animações Clássicas</h3>
-          <ul>
-            <li><strong>A Bela e a Fera</strong> (1991) — O grande clássico</li>
-            <li><strong>O Natal Encantado</strong> (1997) — Sequência festiva</li>
-            <li><strong>O Mundo Mágico de Bela</strong> (1998) — Histórias no castelo</li>
-          </ul>
-        </div>
-        <div class="adapt-item">
-          <h3>🎭 Versões Live-Action & Séries</h3>
-          <ul>
-            <li><strong>A Bela e a Fera (2017)</strong> — Adaptação estrelada por Emma Watson</li>
-            <li><strong>Sing Me a Story with Belle</strong> (1995-1997) — Série educativa em live-action</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUIZ INTERATIVO COM JAVASCRIPT -->
+    <!-- 5. QUIZ -->
     <section id="Quiz" class="card-section quiz-section">
       <h2>💫 Quiz: Qual personagem você seria?</h2>
-      <p>Responda às perguntas abaixo e o resultado será calculado automaticamente no final!</p>
+      <p>Responda às perguntas abaixo e o resultado será calculated automaticamente no final!</p>
 
       <form id="quiz-form">
         <div class="quiz-question">
@@ -352,18 +270,111 @@
       </div>
     </section>
 
-    <section id="Conclusao" class="card-section">
-      <h2>💗 Conclusão</h2>
-      <p>A Bela e a Fera é muito mais do que uma simples história de amor. O filme combina fantasia, aventura, romance e importantes ensinamentos sobre valores humanos. A emocionante jornada de Bela e da Fera demonstra que as pessoas podem mudar quando recebem compreensão, carinho e uma oportunidade para crescer.</p>
-      <p>Além disso, a beleza do castelo encantado, os personagens cativantes e a mensagem inspiradora contribuem para tornar a obra um dos maiores clássicos da animação mundial, provando que o amor verdadeiro é capaz de superar preconceitos e transformar vidas.</p>
+    <!-- 6. O CASTELO ENCANTADO -->
+    <section id="O-Castelo-Encantado" class="card-section">
+      <h2>🏰 O Castelo Encantado</h2>
+      <p>O castelo encantado é um dos elementos mais fascinantes da história. Após a maldição, o lugar que antes era cheio de vida tornou-se isolado e misterioso. Seus corredores longos, salões luxuosos e jardins abandonados criam uma atmosfera mágica e ao mesmo tempo melancólica.</p>
+      <p>Os empregados do castelo foram transformados em objetos domésticos, mas mantiveram suas personalidades e esperanças. Quando Bela chega, o castelo ganha uma nova energia, tornando-se um espaço de amizade, aprendizado e transformação. O ambiente encantado simboliza a mudança interior da Fera e a possibilidade de redenção por meio do amor e da bondade.</p>
     </section>
 
+    <!-- 7. A ROSA ENCANTADA -->
+    <section id="Rosa-Encantada" class="card-section rosa-section">
+      <h2>🌹 A Rosa Encantada Interativa</h2>
+      <p class="section-desc">A rosa encantada dentro da cúpula de vidro representa o tempo que resta ao príncipe. Clique no botão abaixo para interagir com a rosa e ver as pétalas caindo uma a uma conforme o tempo da maldição avança!</p>
+
+      <div class="rose-interactive-container">
+        <!-- Cúpula de Vidro Mágica criada em CSS -->
+        <div class="dome-wrapper">
+          <div class="glass-dome">
+            <div class="sparkles-bg"></div>
+            <div class="rose-display">
+              <div class="rose-flower">
+                <div class="petal petal-center"></div>
+                <div id="petal-left" class="petal petal-left"></div>
+                <div id="petal-right" class="petal petal-right"></div>
+                <div id="petal-bottom" class="petal petal-bottom"></div>
+              </div>
+              <div class="rose-stem"></div>
+              <div class="rose-leaf leaf-left"></div>
+              <div class="rose-leaf leaf-right"></div>
+            </div>
+            <!-- Pétalas caindo -->
+            <div id="fallen-petal-container" class="fallen-petals"></div>
+          </div>
+          <div class="dome-base"></div>
+        </div>
+
+        <div class="rose-controls">
+          <div class="petals-counter">
+            <span>Pétalas Restantes:</span>
+            <strong id="petals-count">4</strong>
+          </div>
+          <p id="rose-stage-description" class="rose-stage-text">Etapa 1: A maldição foi lançada! A rosa brilha intensamente no topo do castelo.</p>
+
+          <button id="drop-petal-btn" class="btn-rose">🌹 Deixar uma Pétala Cair</button>
+          <button id="reset-rose-btn" class="btn-rose-secondary">🔄 Restaurar a Rosa</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FILMES E SÉRIES -->
+    <section id="Filmes-Dublagens" class="card-section">
+      <h2>🎬 Filmes, Séries e Adaptações</h2>
+      <div class="adaptacoes-grid">
+        <div class="adapt-item">
+          <h3>✨ Animações Clássicas</h3>
+          <ul>
+            <li><strong>A Bela e a Fera</strong> (1991) — O grande clássico</li>
+            <li><strong>O Natal Encantado</strong> (1997) — Sequência festiva</li>
+            <li><strong>O Mundo Mágico de Bela</strong> (1998) — Histórias no castelo</li>
+          </ul>
+        </div>
+        <div class="adapt-item">
+          <h3>🎭 Versões Live-Action & Séries</h3>
+          <ul>
+            <li><strong>A Bela e a Fera (2017)</strong> — Adaptação estrelada por Emma Watson</li>
+            <li><strong>Sing Me a Story with Belle</strong> (1995-1997) — Série educativa em live-action</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. TRILHA SONORA -->
+    <section id="Trilha-Sonora" class="card-section">
+      <h2>🎵 Trilha Sonora Inesquecível</h2>
+      <p>A trilha sonora de A Bela e a Fera é considerada uma das mais memoráveis da história do cinema de animação. As músicas ajudam a desenvolver a narrativa e transmitir emoções profundas ao público. Clique no nome de cada música para ouvi-la no YouTube:</p>
+      <div class="music-cards">
+        <div class="music-card">
+          <h4><a href="https://youtu.be/3fbxlNAVa6c?is=0i2Fdfty4OM1_zcA" target="_blank" rel="noopener noreferrer">🎶 "Belle"</a></h4>
+          <p>Apresenta a protagonista e reflete seu desejo por algo maior do que a rotina da aldeia.</p>
+        </div>
+        <div class="music-card">
+          <h4><a href="https://youtu.be/jeDQkqaqfpQ?is=Pu6onBqdk6Wo1CE3" target="_blank" rel="noopener noreferrer">🎶 "Be Our Guest"</a></h4>
+          <p>Uma celebração alegre e contagiante da hospitalidade dos moradores do castelo.</p>
+        </div>
+        <div class="music-card">
+          <h4><a href="https://youtu.be/hv2lCmRXvtY?feature=shared" target="_blank" rel="noopener noreferrer">🎶 "Beauty and the Beast"</a></h4>
+          <p>A emocionante canção-tema que embala a dança do casal no lendário salão de baile.</p>
+        </div>
+      </div>
+      <p>Composta por Alan Menken e Howard Ashman, a trilha sonora conquistou diversos prêmios Oscar e Grammys, marcando épocas.</p>
+    </section>
+
+    <!-- 10. MORAL DA HISTÓRIA -->
     <section id="Moral-da-Historia" class="card-section destaque-moral">
       <h2>⭐ Moral da História</h2>
       <p>A principal moral da história é que <strong>a verdadeira beleza não está na aparência física, mas no caráter e nas atitudes do coração</strong>.</p>
       <p>Ao longo da narrativa, Bela aprende a conhecer a Fera além de sua aparência assustadora, descobrindo sua generosidade e sensibilidade. Da mesma forma, a Fera aprende a controlar seu temperamento e colocar o bem-estar dos outros em primeiro lugar. O filme ensina que julgamentos precipitados são injustos e reforça o valor universal do respeito, da empatia e da autoevolução.</p>
     </section>
 
+    <!-- 11. CONCLUSÃO -->
+    <section id="Conclusao" class="card-section">
+      <h2>💗 Conclusão</h2>
+      <p>A Bela e a Fera é muito mais do que uma simples história de amor. O filme combina fantasia, aventura, romance e importantes ensinamentos sobre valores humanos. A emocionante jornada de Bela e da Fera demonstra que as pessoas podem mudar quando recebem compreensão, carinho e uma oportunidade para crescer.</p>
+      <p>Além disso, a beleza do castelo encantado, os personagens cativantes e a mensagem inspiradora contribuem para tornar a obra um dos maiores clássicos da animação mundial, provando que o amor verdadeiro é capaz de superar preconceitos e transformar vidas.</p>
+    </section>
+
+    <!-- 12. RODAPÉ -->
     <footer class="site-footer">
       <p>🌹 A Bela e a Fera — Edição Especial Encantada</p>
       <a href="https://www.disneyplus.com/" target="_blank" rel="noopener noreferrer">
@@ -549,8 +560,5 @@
       document.getElementById('Quiz').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
-            
 </body>
 </html>
-
-        
