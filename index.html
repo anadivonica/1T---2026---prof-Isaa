@@ -1,588 +1,557 @@
 
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>A Bela e a Fera</title>
-
-    <!-- Arquivo de estilos separado -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Bela e a Fera - Edição Encantada</title>
+  <!-- Arquivo de estilos separado -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonte do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    
-<!-- MENU ENCANTADO -->
-<nav>
-    <h2>🌹 Menu Encantado</h2>
-    <ul>
-        <li><a href="#Inicio">🏰 Início</a></li>
-        <li><a href="#Sobre o Filme">📖 Sobre o Filme</a></li>
-        <li><a href="#Personagens">👑 Personagens</a></li>
-        <li><a href="#A Maldicao da Fera">🌹 A Maldição da Fera</a></li>
-        <li><a href="#O Castelo Encantado">🏰 Castelo Encantado</a></li>
-        <li><a href="#Trilha Sonora">🎵 Trilha Sonora</a></li>
-        <li><a href="#filmes-dublagens">🎬 Filmes e Dublagens</a></li>
-        <li><a href="#Curiosidades">✨ Curiosidades</a></li>
-        <li><a href="#Voce percebeu?">🔎 Você Percebeu?</a></li>
-        <li><a href="#Rosa-Encantada">🌹 Rosa Encantada</a></li>
-        <li><a href="#quiz">💫 Faça o Quiz</a></li>
-        <li><a href="#Conclusão">💗 Conclusão</a></li>
-        <li><a href="#Moral da História">⭐ Moral da História</a></li>
+  <!-- BOTÃO HAMBÚRGUER -->
+  <button id="hamburger-btn" class="hamburger-btn" aria-label="Abrir Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- OVERLAY / MÁSCARA DE FUNDO -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- MENU LATERAL ENCANTADO -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>🌹 Menu Encantado</h2>
+      <button id="close-menu-btn" class="close-btn">&times;</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#Inicio">🏰 Início</a></li>
+      <li><a href="#Sobre-o-Filme">📖 Sobre o Filme</a></li>
+      <li><a href="#Personagens">👑 Personagens</a></li>
+      <li><a href="#Rosa-Encantada">🌹 Rosa Encantada</a></li>
+      <li><a href="#O-Castelo-Encantado">🏰 Castelo Encantado</a></li>
+      <li><a href="#Trilha-Sonora">🎵 Trilha Sonora</a></li>
+      <li><a href="#Filmes-Dublagens">🎬 Filmes e Dublagens</a></li>
+      <li><a href="#Quiz">💫 Faça o Quiz</a></li>
+      <li><a href="#Conclusao">💗 Conclusão</a></li>
+      <li><a href="#Moral-da-Historia">⭐ Moral da História</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main class="container">
-
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
     <header class="cabecalho">
-        <h1>A Bela e a Fera</h1>
+      <div class="header-badge">✨ Clássico Disney ✨</div>
+      <h1>A Bela e a Fera</h1>
+      <p class="subtitulo">A história de amor e transformação mais encantadora de todos os tempos</p>
     </header>
 
-    <section id="Inicio">>
-        <p>Beauty and the Beast (Bela e a Fera) é uma obra clássica da animação que encanta gerações ao combinar romance, fantasia e importantes lições sobre empatia e respeito. A história acompanha Bela, uma jovem inteligente e sonhadora, que encontra um misterioso príncipe amaldiçoado a viver na forma de uma fera até que aprenda o verdadeiro significado do amor. Com uma narrativa envolvente, personagens marcantes e uma trilha sonora inesquecível, o filme destaca valores como a beleza interior, a coragem e a importância de enxergar além das aparências. Reconhecido mundialmente, o longa tornou-se um dos maiores sucessos da animação e permanece como uma referência atemporal do cinema familiar.</p>
-
-        <img src="images.jpeg" alt="A Bela e a Fera" class="imagem-principal">
+    <section id="Inicio" class="card-section">
+      <h2>🏰 Início</h2>
+      <p>Beauty and the Beast (Bela e a Fera) é uma obra clássica da animação que encanta gerações ao combinar romance, fantasia e importantes lições sobre empatia e respeito. A história acompanha Bela, uma jovem inteligente e sonhadora, que encontra um misterioso príncipe amaldiçoado a viver na forma de uma fera até que aprenda o verdadeiro significado do amor.</p>
+      <p>Com uma narrativa envolvente, personagens marcantes e uma trilha sonora inesquecível, o filme destaca valores como a beleza interior, a coragem e a importância de enxergar além das aparências. Reconhecido mundialmente, o longa tornou-se um dos maiores sucessos da animação e permanece como uma referência atemporal do cinema familiar.</p>
     </section>
 
-     <section id="Sobre o Filme">
-        <h2>Sobre o filme</h2>
-        <p>A Bela e a Fera é um filme que conta a história de Bela, uma jovem inteligente e bondosa que vive em uma pequena aldeia. Sua vida muda quando ela passa a morar em um castelo de uma Fera, que na verdade é um príncipe enfeitiçado. Com o tempo, Bela aprende a enxergar além da aparência e descobre a bondade que existe dentro dele. O filme transmite importantes mensagens sobre amor, respeito, amizade e a importância de valorizar o que há no coração das pessoas.</p>
-
+    <section id="Sobre-o-Filme" class="card-section">
+      <h2>📖 Sobre o Filme</h2>
+      <p>A Bela e a Fera é um filme que conta a história de Bela, uma jovem inteligente e bondosa que vive em uma pequena aldeia. Sua vida muda quando ela passa a morar no castelo de uma Fera, que na verdade é um príncipe enfeitiçado. Com o tempo, Bela aprende a enxergar além da aparência e descobre a bondade que existe dentro dele. O filme transmite importantes mensagens sobre amor, respeito, amizade e a importância de valorizar o que há no coração das pessoas.</p>
     </section>
 
-    <section id="Personagens">
-        <h2>Personagens</h2>
-        <p>Clique no nome de cada personagem para acessar suas informações.</p>
+    <section id="Personagens" class="card-section">
+      <h2>👑 Personagens Principais</h2>
+      <p>Clique abaixo no nome de cada personagem para expandir e descobrir seus detalhes, dubladores e curiosidades:</p>
 
-        <details>
-            <summary>🌹 Bela</summary>
+      <div class="accordion-container">
+        <!-- BELA -->
+        <details class="personagem-accordion">
+          <summary>🌹 Bela</summary>
+          <div class="details-content">
+            <h3>A História de Bela</h3>
+            <p>Bela é uma jovem que vive em uma pequena aldeia e se destaca por sua inteligência, bondade e amor pelos livros. Diferente das outras pessoas da vila, ela sonha com aventuras e deseja conhecer o mundo além do lugar onde mora. Sua personalidade forte e seu coração generoso fazem dela uma personagem admirada por muitos.</p>
+            <p>Diferente dos outros habitantes que se contentam com a rotina, Bela busca experiências que a façam crescer. Sua inteligência permite compreender rapidamente situações complexas, e sua bondade inspira todos ao seu redor.</p>
 
-            <h3>A história de Bela</h3>
-            <p>Bela é uma jovem que vive em uma pequena aldeia e se destaca por sua inteligência, bondade e amor pelos livros. Diferente das outras pessoas da vila, ela sonha com aventuras, e deseja conhecer o mundo além do lugar onde mora. Sua personalidade forte e seu coração generoso fazem dela uma personagem admirada por muitos.</p>
+            <div class="fan-favorite-box">
+              <h4>⭐ Personagem Favorito dos Fãs</h4>
+              <ul>
+                <li>Inteligente e corajosa.</li>
+                <li>Ama livros e conhecimento.</li>
+                <li>Não se deixa influenciar pela opinião da vila.</li>
+              </ul>
+            </div>
 
-            <p>Diferente dos outros habitantes da vila, que se contentam com a rotina, Bela sonha em explorar além das fronteiras conhecidas, buscando experiências que a façam crescer e aprender. Sua inteligência aguçada permite que compreenda rapidamente situações complexas, e sua bondade faz com que todos que a conhecem sintam respeito e afeto por ela. Bela não apenas lê sobre aventuras, mas inspira outros a acreditarem que é possível transformar sonhos em realidade. Com um espírito indomável e um coração generoso, ela se torna uma figura admirada e querida, não apenas por sua aldeia, mas por todos que cruzam seu caminho.</p>
+            <div class="voices-grid">
+              <div><strong>Vozes Originais (1991):</strong> Paige O'Hara</div>
+              <div><strong>Dublagem BR (1991):</strong> Ju Cassou</div>
+              <div><strong>Live-Action (2017):</strong> Emma Watson</div>
+              <div><strong>Dublagem BR (2017):</strong> Flávia Saddy</div>
+            </div>
 
-            <h3>Personagem favorito dos fãs: Bela</h3>
-            <p>Inteligente e corajosa.</p>
-            <p>Ama livros e conhecimento.</p>
-            <p>Não se deixa infuenciar oela opinião da vila.</p>
-
-            <h3>Vozes originais — animação de 1991</h3>
-            <p>Paige O'Hara — Bela</p>
-
-            <h3>Dublagem brasileira — animação de 1991</h3>
-            <p>Ju Cassou — Bela</p>
-
-            <h3>Live-action de 2017</h3>
-            <p>Emma Watson — Bela</p>
-            <p>Flávia Saddy — Bela (dublagem brasileira)</p>
-
-            <h3>Você percebeu?</h3>
-            <p>A BELA APARECE EM OUTRO FILME DA DISNEY:</p>
-            <p>Em uma cena de The Hunchback of Notre Dame, é possível ver Bela caminhando pela cidade segurando um livro.</p>
-
-            <p>BELA USA AZUL POR UM MOTIVO:</p>
-            <p>O vestido azul a destaca dos moradores da vila, mostrando que ela é diferente e não segue a multidão.</p>
-            <img src="ana.jpeg">
-            
+            <div class="curiosidades-box">
+              <h4>🔎 Você Percebeu?</h4>
+              <p><strong>Aparece em outro filme:</strong> Em uma cena de <em>O Corcunda de Notre Dame</em>, é possível ver Bela caminhando pela cidade segurando um livro.</p>
+              <p><strong>O Vestido Azul:</strong> O azul é usado para destacá-la visualmente de todos os outros moradores da vila, mostrando que ela é diferente e pensa com a própria cabeça.</p>
+            </div>
+          </div>
         </details>
 
-        <details>
-            <summary>🥀 Fera</summary>
+        <!-- FERA -->
+        <details class="personagem-accordion">
+          <summary>🥀 Fera</summary>
+          <div class="details-content">
+            <h3>A Maldição da Fera</h3>
+            <p>A história começa quando um príncipe arrogante e egoísta se recusa a dar abrigo a uma velha senhora, que na verdade era uma feiticeira. Como punição por sua falta de compaixão, ele é transformado em uma terrível Fera e seus servos em objetos domésticos. A única forma de quebrar o feitiço é aprender a amar de verdade e ser amado em retorno.</p>
 
-            <h3>A maldição da Fera</h3>
-            <p>história de A Bela e a Fera começa quando um príncipe arrogante e egoísta se recusa a ajudar uma velha senhora que,na verdade, era uma feiticeira. Como punição por sua falta de bondade, ele é transformado em uma terrível Fera, e todos os habitantes de seu castelo também são enfeitiçados. A única maneira de quebrar a maldição é aprender a amar alguém sinceramente e receber esse amor de volta antes que a última pétala de uma rosa encantada caia.</p>
+            <div class="fan-favorite-box">
+              <h4>⭐ Por que os fãs amam o Fera?</h4>
+              <ul>
+                <li>Possui uma das maiores jornadas de evolução da Disney.</li>
+                <li>Aprende a ser gentil, paciente e a priorizar a felicidade do outro.</li>
+                <li>Sua transformação emocional emociona espectadores do mundo todo.</li>
+              </ul>
+            </div>
 
-            <h3>Personagem favorito dos fãs: Fera</h3>
-            <p>Tem uma das maiores evoluções da Disney.</p>
-            <p>Aprende a ser gentil e pensar nos outros.</p>
-            <p>Muitos fãms consideram sua transformação emocional a melhor parte da história.</p>
-
-            <h3>Vozes originais — animação de 1991</h3>
-            <p>Robby Benson — Fera / Príncipe Adam</p>
-
-            <h3>Dublagem brasileira — animação de 1991</h3>
-            <p>Garcia Júnior — Fera / Príncipe Adam</p>
-
-            <h3>Live-action de 2017</h3>
-            <p>Dan Stevens — Fera / Príncipe Adam</p>
-            <p>Márcio Simões — Fera (dublagem brasileira)</p>
-             <img src="download.jpeg">
+            <div class="voices-grid">
+              <div><strong>Voz Original (1991):</strong> Robby Benson</div>
+              <div><strong>Dublagem BR (1991):</strong> Garcia Júnior</div>
+              <div><strong>Live-Action (2017):</strong> Dan Stevens</div>
+              <div><strong>Dublagem BR (2017):</strong> Márcio Simões</div>
+            </div>
+          </div>
         </details>
 
-        <details>
-            <summary>🕯️ Lumière</summary>
+        <!-- LUMIÈRE -->
+        <details class="personagem-accordion">
+          <summary>🕯️ Lumière</summary>
+          <div class="details-content">
+            <h3>O Carismático Candelabro</h3>
+            <p>Transformado em um candelabro falante, Lumière é o maitre do castelo. Sempre elegante, entusiasmado e acolhedor, ele faz de tudo para que Bela se sinta confortável, liderando o inesquecível número musical "Be Our Guest" (Seja Nossa Convidada).</p>
 
-            <h3>O castelo encantado</h3>
-            <p>Entre os habitantes do castelo estão Lumière, transformado em um candelabro; Horloge, transformado em um relógio; e Madame Samovar, transformada em um bule de chá. Apesar da tristeza causada pela maldição, os habitantes do castelo nunca perdem a esperança de que um dia tudo volte ao normal.</p>
+            <div class="fan-favorite-box">
+              <h4>⭐ Destaques do Personagem</h4>
+              <ul>
+                <li>Engraçado, carismático e hospitaleiro.</li>
+                <li>Sempre tenta reaproximar Bela e a Fera.</li>
+                <li>Um dos objetos mais icônicos do cinema de animação.</li>
+              </ul>
+            </div>
 
-            <h3>Personagem favorito dos fãs: Lumière</h3>
-            <p>Engraçado e carismático.</p>
-            <p>Sempre tenta juntar Bela e a Fera.</p>
-            <p>É um dos objetos encantados mais queridos.</p>
-
-            <h3>Vozes originais — animação de 1991</h3>
-            <p>Jerry Orbach — Lumière</p>
-
-            <h3>Dublagem brasileira — animação de 1991</h3>
-            <p>Ivon Curi — Lumière</p>
-
-            <h3>Live-action de 2017</h3>
-            <p>Ewan McGregor — Lumière</p>
-            <img src= "IMG_9f500c37-ddd6-434a-9594-cdb6d876197d.jpg">
+            <div class="voices-grid">
+              <div><strong>Voz Original (1991):</strong> Jerry Orbach</div>
+              <div><strong>Dublagem BR (1991):</strong> Ivon Curi</div>
+              <div><strong>Live-Action (2017):</strong> Ewan McGregor</div>
+            </div>
+          </div>
         </details>
 
-        <details>
-            <summary>☕ Zip</summary>
+        <!-- ZIP -->
+        <details class="personagem-accordion">
+          <summary>☕ Zip (Chip)</summary>
+          <div class="details-content">
+            <h3>A Xícara Encantada</h3>
+            <p>Zip é o pequeno filho de Madame Samovar (a chaleira), transformado em uma xícara de chá com uma pequena lasca. Com sua inocência e curiosidade infantil, traz leveza e momentos doces para o castelo.</p>
 
-            <h3>O castelo encantado</h3>
-            <p>Os empregados do castelo foram transformados em objetos domésticos, mas mantiveram suas personalidades e esperanças.</p>
-
-            <h3>Personagem favorito dos fãs: Zip</h3>
-            <p>Fofo e inocente.</p>
-            <p>Conquista quase todo mundo que assiste ao filme.</p>
-            <img src= "IMG_af1fa5f7-f018-4381-8241-5545590424cd.webp">
+            <div class="fan-favorite-box">
+              <h4>⭐ Destaques do Personagem</h4>
+              <ul>
+                <li>Adorável, fofo e inocente.</li>
+                <li>Conquista o coração de todos com sua espontaneidade.</li>
+                <li>Desempenha um papel crucial para salvar os heróis no final!</li>
+              </ul>
+            </div>
+          </div>
         </details>
+      </div>
     </section>
 
-    <section id="Personagens Principais">
-        <h2>Personagens Principais</h2>
-        <p>Os personagens de A Bela e a Fera são muito marcantes. Bela é uma jovem corajosa, inteligente e apaixonada por livros. A Fera, apesar da aparência assustadora, possui um coração bondoso. Outros personagens importantes são Lumière, Horloge, Madame Samovar e Zip, que ajudam Bela e a Fera ao longo da história.</p>
-    </section>
+    <!-- ROSA ENCANTADA INTERATIVA -->
+    <section id="Rosa-Encantada" class="card-section rosa-section">
+      <h2>🌹 A Rosa Encantada Interativa</h2>
+      <p class="section-desc">A rosa encantada dentro da cúpula de vidro representa o tempo que resta ao príncipe. Clique no botão abaixo para interagir com a rosa e ver as pétalas caindo uma a uma conforme o tempo da maldição avança!</p>
 
-    
-<section id="quiz">
-    <h2>✨ Quiz: Qual personagem você seria?</h2>
-
-    <p>
-        Responda às perguntas, anote a letra escolhida
-        em cada uma e descubra qual personagem combina
-        mais com sua personalidade!
-    </p>
-
-    <form>
-        <fieldset>
-            <legend>1. O que você mais gosta de fazer?</legend>
-
-            <input type="radio" id="q1a" name="q1" value="a">
-            <label for="q1a">A) Ler e aprender coisas novas.</label>
-            <br>
-
-            <input type="radio" id="q1b" name="q1" value="b">
-            <label for="q1b">B) Proteger quem eu amo.</label>
-            <br>
-
-            <input type="radio" id="q1c" name="q1" value="c">
-            <label for="q1c">C) Animar as pessoas.</label>
-            <br>
-
-            <input type="radio" id="q1d" name="q1" value="d">
-            <label for="q1d">D) Estar perto da minha família.</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>2. Como você age diante de um desafio?</legend>
-
-            <input type="radio" id="q2a" name="q2" value="a">
-            <label for="q2a">A) Procuro entender a situação.</label>
-            <br>
-
-            <input type="radio" id="q2b" name="q2" value="b">
-            <label for="q2b">B) Enfrento o desafio com coragem.</label>
-            <br>
-
-            <input type="radio" id="q2c" name="q2" value="c">
-            <label for="q2c">C) Tento resolver tudo com bom humor.</label>
-            <br>
-
-            <input type="radio" id="q2d" name="q2" value="d">
-            <label for="q2d">D) Peço ajuda e apoio a quem confio.</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>3. Qual característica mais combina com você?</legend>
-
-            <input type="radio" id="q3a" name="q3" value="a">
-            <label for="q3a">A) Inteligência e curiosidade.</label>
-            <br>
-
-            <input type="radio" id="q3b" name="q3" value="b">
-            <label for="q3b">B) Coragem e determinação.</label>
-            <br>
-
-            <input type="radio" id="q3c" name="q3" value="c">
-            <label for="q3c">C) Alegria e carisma.</label>
-            <br>
-
-            <input type="radio" id="q3d" name="q3" value="d">
-            <label for="q3d">D) Carinho e gentileza.</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>4. Qual lugar você escolheria?</legend>
-
-            <input type="radio" id="q4a" name="q4" value="a">
-            <label for="q4a">A) Uma biblioteca cheia de livros.</label>
-            <br>
-
-            <input type="radio" id="q4b" name="q4" value="b">
-            <label for="q4b">B) Um castelo misterioso.</label>
-            <br>
-
-            <input type="radio" id="q4c" name="q4" value="c">
-            <label for="q4c">C) Um salão com música e festa.</label>
-            <br>
-
-            <input type="radio" id="q4d" name="q4" value="d">
-            <label for="q4d">D) Uma casa aconchegante.</label>
-        </fieldset>
-
-        <p>
-            Agora conte quantas vezes você escolheu cada letra.
-            A letra mais escolhida indica seu personagem!
-        </p>
-    </form>
-
-    <h3>🌹 Descubra seu resultado</h3>
-
-    <details>
-        <summary>Maioria A — Bela</summary>
-        <p>
-            Você é uma pessoa curiosa, inteligente e sonhadora.
-            Gosta de aprender e acredita que existe muito
-            para descobrir no mundo!
-        </p>
-        <img src="ana.jpeg" alt="Bela" width="200">
-    </details>
-
-    <details>
-        <summary>Maioria B — Fera</summary>
-        <p>
-            Você é corajoso, determinado e tem muito potencial
-            para crescer. Assim como a Fera, pode aprender
-            com suas experiências e se tornar uma pessoa melhor.
-        </p>
-        <img src="download.jpeg" alt="Fera" width="200">
-    </details>
-
-    <details>
-        <summary>Maioria C — Lumière</summary>
-        <p>
-            Você é alegre, comunicativo e gosta de animar
-            o ambiente. Sua energia ajuda a tornar os momentos
-            especiais para as pessoas ao seu redor!
-        </p>
-        <img src="IMG_9f500c37-ddd6-434a-9594-cdb6d876197d.jpg" alt="Lumière" width="200">
-    </details>
-
-    <details>
-        <summary>Maioria D — Madame Samovar</summary>
-        <p>
-            Você é acolhedor, gentil e atencioso.
-            Gosta de cuidar das pessoas e valoriza os laços
-            de amizade e família.
-        </p>
-        <img src="f3c3c23c333aad084955e86393a35805.jpg" alt="Lumière" width="200">
-    </details>
-
-    <p>
-        <strong>Empate?</strong> Se duas letras tiverem a mesma
-        quantidade de respostas, você pode se identificar
-        com os dois personagens!
-    </p>
-                </section>
-    
-
-    <section id="A maldição da Fera">
-        <h2>A maldição da Fera</h2>
-        <p>A história de A Bela e a Fera começa quando um príncipe arrogante e egoísta se recusa a ajudar uma velha senhora que, na verdade, era uma feiticeira. Como punição por sua falta de bondade, ele é transformado em uma terrível Fera, e todos os habitantes de seu castelo também são enfeitiçados. A única maneira de quebrar a maldição é aprender a amar alguém sinceramente e receber esse amor de volta antes que a última pétala de uma rosa encantada caia.</p>
-    </section>
-
-
-<section id="Rosa-Encantada">
-    <h2>🌹 A Rosa Encantada</h2>
-
-    <p>
-        A rosa encantada representa o tempo que resta para
-        a Fera aprender a amar e receber amor verdadeiro.
-        Explore as etapas da maldição!
-    </p>
-
-    <figure>
-        <img src="images.jpeg"
-             alt="A Bela e a Fera"
-             width="300">
-        <figcaption>
-            A rosa encantada: símbolo da maldição do príncipe.
-        </figcaption>
-    </figure>
-
-    <h3>O tempo da maldição</h3>
-
-    <p>Imagine a rosa perdendo suas pétalas:</p>
-
-    <table border="1">
-        <tr>
-            <th>Etapa</th>
-            <th>Rosa</th>
-            <th>Significado</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>🌹🌹🌹🌹🌹</td>
-            <td>A maldição começa.</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>🌹🌹🌹🌹</td>
-            <td>A Fera precisa mudar.</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>🌹🌹🌹</td>
-            <td>Bela começa a conhecê-lo melhor.</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>🌹🌹</td>
-            <td>O tempo está acabando.</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>🥀</td>
-            <td>A última pétala representa o fim do prazo.</td>
-        </tr>
-    </table>
-
-    <details>
-        <summary>O que acontece se a última pétala cair?</summary>
-        <p>
-            Se a Fera não aprender a amar e não receber
-            amor verdadeiro antes que a última pétala caia,
-            a maldição não poderá ser quebrada.
-        </p>
-    </details>
-            </section>
-    
-    
-    <section id="O Castelo Encantado">
-        <h2>O castelo encantado</h2>
-        <p>O castelo encantado é um dos elementos mais fascinantes da história. Após a maldição, o lugar que antes era cheio de vida tornou-se isolado e misterioso. Seus corredores longos, salões luxuosos e jardins abandonados criam uma atmosfera mágica e ao mesmo tempo melancólica. Os empregados do castelo foram transformados em objetos domésticos, mas mantiveram suas personalidades e esperanças. Entre eles estão Lumière, transformado em um candelabro; Horloge, transformado em um relógio; e Madame Samovar, transformada em um bule de chá. Apesar da tristeza causada pela maldição, os habitantes do castelo nunca perdem a esperança de que um dia tudo volte ao normal. Quando Bela chega ao local, o castelo ganha uma nova energia, tornando-se um espaço de amizade, aprendizado e transformação. O ambiente encantado simboliza a mudança interior da Fera e a possibilidade de redenção por meio do amor e da bondade.</p>
-    </section>
-
-    <section id="Trilha Sonora">
-        <h2>Trilha sonora</h2>
-        <p>A trilha sonora de A Bela e a Fera é considerada uma das mais memoráveis da história do cinema de animação. As músicas ajudam a desenvolver a narrativa, apresentar os personagens e transmitir emoções importantes ao público. A canção “Belle” apresenta a protagonista e mostra como ela se sente diferente dos demais moradores de sua aldeia. Já “Be Our Guest” é uma música alegre e divertida que destaca a hospitalidade dos moradores encantados do castelo. A canção-tema “Beauty and the Beast” acompanha um dos momentos mais emocionantes do filme, mostrando o crescimento do carinho entre Bela e a Fera. Composta por Alan Menken e Howard Ashman, a trilha sonora conquistou diversos prêmios e tornou-se um dos grandes motivos do sucesso do filme. As músicas permanecem populares até hoje e são lembradas por diferentes gerações de espectadores.</p>
-    </section>
-
-    <section id="Conclusão do Filme">
-        <h2>Conclusão do Filme</h2>
-        <p>Em conclusão, A Bela e a Fera é muito mais do que uma simples história de amor. O filme combina fantasia, aventura, romance e importantes ensinamentos sobre valores humanos. A emocionante jornada de Bela e da Fera demonstra que as pessoas podem mudar quando recebem compreensão, carinho e uma oportunidade para crescer. Além disso, a beleza do castelo encantado, os personagens cativantes, as músicas inesquecíveis e a mensagem inspiradora contribuem para tornar a obra um dos maiores clássicos da animação mundial. Sua história continua encantando crianças, jovens e adultos, provando que o amor verdadeiro é capaz de superar preconceitos, quebrar barreiras e transformar vidas.</p>
-    </section>
-
- <section id="Moral da Históri">
-        <h2>Moral da história</h2>
-        <p>A principal moral da história é que a verdadeira beleza não está na aparência física, mas no caráter e nas atitudes das pessoas. Ao longo da narrativa, Bela aprende a conhecer a Fera além de sua aparência assustadora e descobre que ele possui qualidades como generosidade, coragem e sensibilidade. Da mesma forma, a Fera aprende a controlar sua raiva, a ser mais gentil e a colocar o bem-estar dos outros acima de seus próprios interesses. O filme ensina que julgamentos baseados apenas na aparência podem ser injustos e enganosos. Também mostra a importância do respeito, da empatia e da capacidade de mudar para melhor. Essas lições fazem com que a história continue atual e relevante mesmo muitos anos após seu lançamento.</p>
-
-    </section>
-
-    <section id="Filmes animados">
-        <h2>Filmes animados</h2>
-        <ul>
-            <li>A Bela e a Fera - 1991</li>
-            <li>A Bela e a Fera: O Natal Encantado - 1997</li>
-            <li>A Bela e a Fera: O Mundo Mágico de Bela - 1998</li>
-        </ul>
-
-        <h3>Live-Action</h3>
-        <p>A Bela e a Fera - 2017</p>
-
-        <h3>Séries Live-Action</h3>
-        <p>Sing Me a Story with Belle - 1995-1997</p>
-    </section>
-
-
-<!-- FILMES E DUBLAGENS -->
-<section id="filmes-dublagens">
-
-    <h2>🎬 Filmes e Vozes Encantadas</h2>
-
-    <p class="introducao-secao">
-        Descubra as versões de A Bela e a Fera e conheça
-        as vozes que deram vida aos personagens!
-    </p>
-
-    <!-- FILMES -->
-    <div class="bloco-filmes">
-        <h3>✨ Os filmes da história</h3>
-
-        <div class="cartoes-filmes">
-
-            <article class="cartao-filme">
-                <span class="icone-filme">🌹</span>
-                <h4>A Bela e a Fera</h4>
-                <p class="ano-filme">1991</p>
-                <p>
-                    A animação clássica da Disney que apresentou
-                    ao mundo a história de Bela e do príncipe
-                    amaldiçoado.
-                </p>
-            </article>
-
-            <article class="cartao-filme">
-                <span class="icone-filme">❄️</span>
-                <h4>O Natal Encantado</h4>
-                <p class="ano-filme">1997</p>
-                <p>
-                    Uma aventura especial que acontece durante
-                    o período em que Bela vive no castelo.
-                </p>
-            </article>
-
-            <article class="cartao-filme">
-                <span class="icone-filme">🏰</span>
-                <h4>O Mundo Mágico de Bela</h4>
-                <p class="ano-filme">1998</p>
-                <p>
-                    Uma coleção de histórias que apresenta
-                    novas aventuras dos habitantes do castelo.
-                </p>
-            </article>
-
-            <article class="cartao-filme">
-                <span class="icone-filme">🎥</span>
-                <h4>A Bela e a Fera</h4>
-                <p class="ano-filme">2017 — Live-action</p>
-                <p>
-                    Uma versão com atores reais, protagonizada
-                    por Emma Watson e Dan Stevens.
-                </p>
-            </article>
-
+      <div class="rose-interactive-container">
+        <!-- Cúpula de Vidro Mágica criada em CSS -->
+        <div class="dome-wrapper">
+          <div class="glass-dome">
+            <div class="sparkles-bg"></div>
+            <div class="rose-display">
+              <div class="rose-flower">
+                <div class="petal petal-center"></div>
+                <div id="petal-left" class="petal petal-left"></div>
+                <div id="petal-right" class="petal petal-right"></div>
+                <div id="petal-bottom" class="petal petal-bottom"></div>
+              </div>
+              <div class="rose-stem"></div>
+              <div class="rose-leaf leaf-left"></div>
+              <div class="rose-leaf leaf-right"></div>
+            </div>
+            <!-- Pétalas caindo -->
+            <div id="fallen-petal-container" class="fallen-petals"></div>
+          </div>
+          <div class="dome-base"></div>
         </div>
 
-        <div class="curiosidade-filme">
-            <h4>📺 Você sabia?</h4>
-            <p>
-                Bela também protagonizou a série infantil
-                <em>Sing Me a Story with Belle</em>,
-                exibida entre 1995 e 1997.
-            </p>
+        <div class="rose-controls">
+          <div class="petals-counter">
+            <span>Pétalas Restantes:</span>
+            <strong id="petals-count">4</strong>
+          </div>
+          <p id="rose-stage-description" class="rose-stage-text">Etapa 1: A maldição foi lançada! A rosa brilha intensamente no topo do castelo.</p>
+
+          <button id="drop-petal-btn" class="btn-rose">🌹 Deixar uma Pétala Cair</button>
+          <button id="reset-rose-btn" class="btn-rose-secondary">🔄 Restaurar a Rosa</button>
         </div>
-    </div>
-
-    <!-- DUBLAGENS -->
-    <div class="bloco-vozes">
-        <h3>🎙️ As vozes dos personagens</h3>
-
-        <p>
-            As vozes ajudam a transmitir as emoções, a
-            personalidade e o encanto de cada personagem.
-            Conheça alguns dos artistas da animação de 1991!
-        </p>
-
-        <h4 class="subtitulo-vozes">🌎 Vozes originais — inglês</h4>
-
-        <div class="lista-vozes">
-            <div class="cartao-voz">
-                <strong>👑 Bela</strong>
-                <span>Paige O'Hara</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🥀 Fera / Príncipe Adam</strong>
-                <span>Robby Benson</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🕯️ Lumière</strong>
-                <span>Jerry Orbach</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>☕ Madame Samovar</strong>
-                <span>Angela Lansbury</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🕰️ Horloge</strong>
-                <span>David Ogden Stiers</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>💪 Gaston</strong>
-                <span>Richard White</span>
-            </div>
-        </div>
-
-        <h4 class="subtitulo-vozes">🇧🇷 Dublagem brasileira — animação de 1991</h4>
-
-        <div class="lista-vozes">
-            <div class="cartao-voz">
-                <strong>👑 Bela</strong>
-                <span>Ju Cassou</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🥀 Fera / Príncipe Adam</strong>
-                <span>Garcia Júnior</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🕯️ Lumière</strong>
-                <span>Ivon Curi</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🕰️ Horloge</strong>
-                <span>Isaac Schneider</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🎩 LeFou</strong>
-                <span>Marco Ribeiro</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>👨 Maurice</strong>
-                <span>Pietro Mário</span>
-            </div>
-        </div>
-
-        <h4 class="subtitulo-vozes">🎭 Elenco do live-action — 2017</h4>
-
-        <div class="lista-vozes">
-            <div class="cartao-voz">
-                <strong>👑 Bela</strong>
-                <span>Emma Watson</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🥀 Fera / Príncipe Adam</strong>
-                <span>Dan Stevens</span>
-            </div>
-
-            <div class="cartao-voz">
-                <strong>🕯️ Lumière</strong>
-                <span>Ewan McGregor</span>
-            </div>
-        </div>
-    </div>
-
-    <p class="nota-vozes">
-        ✨ As informações de dublagem apresentadas aqui
-        se referem à animação de 1991. O elenco do
-        live-action é apresentado separadamente.
-    </p>
-
+      </div>
     </section>
+
+    <section id="O-Castelo-Encantado" class="card-section">
+      <h2>🏰 O Castelo Encantado</h2>
+      <p>O castelo encantado é um dos elementos mais fascinantes da história. Após a maldição, o lugar que antes era cheio de vida tornou-se isolado e misterioso. Seus corredores longos, salões luxuosos e jardins abandonados criam uma atmosfera mágica e ao mesmo tempo melancólica.</p>
+      <p>Os empregados do castelo foram transformados em objetos domésticos, mas mantiveram suas personalidades e esperanças. Quando Bela chega, o castelo ganha uma nova energia, tornando-se um espaço de amizade, aprendizado e transformação. O ambiente encantado simboliza a mudança interior da Fera e a possibilidade de redenção por meio do amor e da bondade.</p>
+    </section>
+
+    <section id="Trilha-Sonora" class="card-section">
+      <h2>🎵 Trilha Sonora Inesquecível</h2>
+      <p>A trilha sonora de A Bela e a Fera é considerada uma das mais memoráveis da história do cinema de animação. As músicas ajudam a desenvolver a narrativa e transmitir emoções profundas ao público.</p>
+      <div class="music-cards">
+        <div class="music-card">
+          <h4>🎶 "Belle"</h4>
+          <p>Apresenta a protagonista e reflete seu desejo por algo maior do que a rotina da aldeia.</p>
+        </div>
+        <div class="music-card">
+          <h4>🎶 "Be Our Guest"</h4>
+          <p>Uma celebração alegre e contagiante da hospitalidade dos moradores do castelo.</p>
+        </div>
+        <div class="music-card">
+          <h4>🎶 "Beauty and the Beast"</h4>
+          <p>A emocionante canção-tema que embala a dança do casal no lendário salão de baile.</p>
+        </div>
+      </div>
+      <p>Composta por Alan Menken e Howard Ashman, a trilha sonora conquistou diversos prêmios Oscar e Grammys, marcando épocas.</p>
+    </section>
+
+    <section id="Filmes-Dublagens" class="card-section">
+      <h2>🎬 Filmes, Séries e Adaptações</h2>
+      <div class="adaptacoes-grid">
+        <div class="adapt-item">
+          <h3>✨ Animações Clássicas</h3>
+          <ul>
+            <li><strong>A Bela e a Fera</strong> (1991) — O grande clássico</li>
+            <li><strong>O Natal Encantado</strong> (1997) — Sequência festiva</li>
+            <li><strong>O Mundo Mágico de Bela</strong> (1998) — Histórias no castelo</li>
+          </ul>
+        </div>
+        <div class="adapt-item">
+          <h3>🎭 Versões Live-Action & Séries</h3>
+          <ul>
+            <li><strong>A Bela e a Fera (2017)</strong> — Adaptação estrelada por Emma Watson</li>
+            <li><strong>Sing Me a Story with Belle</strong> (1995-1997) — Série educativa em live-action</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ INTERATIVO COM JAVASCRIPT -->
+    <section id="Quiz" class="card-section quiz-section">
+      <h2>💫 Quiz: Qual personagem você seria?</h2>
+      <p>Responda às perguntas abaixo e o resultado será calculado automaticamente no final!</p>
+
+      <form id="quiz-form">
+        <div class="quiz-question">
+          <h3>1. O que você mais gosta de fazer no seu tempo livre?</h3>
+          <label class="quiz-option">
+            <input type="radio" name="q1" value="A" required>
+            <span>A) Ler, estudar e aprender coisas novas sobre o mundo.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q1" value="B">
+            <span>B) Proteger as pessoas que amo e cuidar do meu espaço.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q1" value="C">
+            <span>C) Animar festas, conversar e fazer as pessoas sorrirem.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q1" value="D">
+            <span>D) Cuidar da família, preparar algo gostoso e acolher os outros.</span>
+          </label>
+        </div>
+
+        <div class="quiz-question">
+          <h3>2. Como você reage diante de um desafio complexo?</h3>
+          <label class="quiz-option">
+            <input type="radio" name="q2" value="A" required>
+            <span>A) Analiso com calma para entender toda a situação.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q2" value="B">
+            <span>B) Enfrento com coragem e firmeza, sem recuar.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q2" value="C">
+            <span>C) Tento resolver com leveza, diplomacia e bom humor.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q2" value="D">
+            <span>D) Busco ajudar quem precisa e ofereço apoio emocional.</span>
+          </label>
+        </div>
+
+        <div class="quiz-question">
+          <h3>3. Qual qualidade melhor descreve sua essência?</h3>
+          <label class="quiz-option">
+            <input type="radio" name="q3" value="A" required>
+            <span>A) Inteligência, independência e curiosidade.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q3" value="B">
+            <span>B) Determinação, força e desejo de evolução interior.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q3" value="C">
+            <span>C) Alegria, charme, carisma e entusiasmo.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q3" value="D">
+            <span>D) Carinho, gentileza, paciência e sabedoria.</span>
+          </label>
+        </div>
+
+        <div class="quiz-question">
+          <h3>4. Qual lugar você escolheria para passar a tarde?</h3>
+          <label class="quiz-option">
+            <input type="radio" name="q4" value="A" required>
+            <span>A) Uma biblioteca épica com milhares de livros.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q4" value="B">
+            <span>B) Um castelo reservado com um belo jardim.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q4" value="C">
+            <span>C) Um grande salão de festas iluminado e animado.</span>
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="q4" value="D">
+            <span>D) Uma sala de estar bem aconchegante com chá quentinho.</span>
+          </label>
+        </div>
+
+        <button type="button" id="submit-quiz-btn" class="btn-quiz">✨ Descobrir Meu Personagem</button>
+      </form>
+
+      <!-- RESULTADO DO QUIZ -->
+      <div id="quiz-result" class="quiz-result hidden">
+        <h3 id="result-title">Seu resultado aparecerá aqui!</h3>
+        <p id="result-desc"></p>
+        <button id="restart-quiz-btn" class="btn-quiz-restart">🔄 Refazer Quiz</button>
+      </div>
+    </section>
+
+    <section id="Conclusao" class="card-section">
+      <h2>💗 Conclusão</h2>
+      <p>A Bela e a Fera é muito mais do que uma simples história de amor. O filme combina fantasia, aventura, romance e importantes ensinamentos sobre valores humanos. A emocionante jornada de Bela e da Fera demonstra que as pessoas podem mudar quando recebem compreensão, carinho e uma oportunidade para crescer.</p>
+      <p>Além disso, a beleza do castelo encantado, os personagens cativantes e a mensagem inspiradora contribuem para tornar a obra um dos maiores clássicos da animação mundial, provando que o amor verdadeiro é capaz de superar preconceitos e transformar vidas.</p>
+    </section>
+
+    <section id="Moral-da-Historia" class="card-section destaque-moral">
+      <h2>⭐ Moral da História</h2>
+      <p>A principal moral da história é que <strong>a verdadeira beleza não está na aparência física, mas no caráter e nas atitudes do coração</strong>.</p>
+      <p>Ao longo da narrativa, Bela aprende a conhecer a Fera além de sua aparência assustadora, descobrindo sua generosidade e sensibilidade. Da mesma forma, a Fera aprende a controlar seu temperamento e colocar o bem-estar dos outros em primeiro lugar. O filme ensina que julgamentos precipitados são injustos e reforça o valor universal do respeito, da empatia e da autoevolução.</p>
+    </section>
+
+    <footer>
+      <p>🌹 A Bela e a Fera — Edição Especial Encantada</p>
+    </footer>
+  </main>
+
+  <!-- JAVASCRIPT EMbutido para lógica de interatividade -->
+  <script>
+    // 1. LÓGICA DO MENU LATERAL (DRAWER)
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    function openMenu() {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+      hamburgerBtn.classList.add('active');
+    }
+
+    function closeMenu() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      hamburgerBtn.classList.remove('active');
+    }
+
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // 2. INTERATIVIDADE DA ROSA ENCANTADA
+    const dropPetalBtn = document.getElementById('drop-petal-btn');
+    const resetRoseBtn = document.getElementById('reset-rose-btn');
+    const petalsCountEl = document.getElementById('petals-count');
+    const roseStageText = document.getElementById('rose-stage-description');
+    const fallenPetalContainer = document.getElementById('fallen-petal-container');
+
+    const petalElements = [
+      document.getElementById('petal-bottom'),
+      document.getElementById('petal-right'),
+      document.getElementById('petal-left')
+    ];
+
+    const stagesInfo = [
+      "Etapa 1: A maldição foi lançada! A rosa brilha com toda a sua magia.",
+      "Etapa 2: A Fera precisa aprender a amar antes que o tempo se esgoste.",
+      "Etapa 3: Bela chega ao castelo. O tempo está ficando curto!",
+      "Etapa 4: Resta apenas uma pétala! O destino do castelo está prestes a ser selado.",
+      "Etapa 5: A última pétala caiu! A maldição atingiu seu ponto crítico..."
+    ];
+
+    let currentPetals = 4;
+
+    dropPetalBtn.addEventListener('click', () => {
+      if (currentPetals > 1) {
+        currentPetals--;
+        const petalToDrop = petalElements[currentPetals - 1];
+        if (petalToDrop) {
+          petalToDrop.style.opacity = '0';
+          petalToDrop.style.transform = 'translateY(80px) rotate(45deg)';
+        }
+
+        // Criar elemento de pétala caída no chão da cúpula
+        const fallenPetal = document.createElement('div');
+        fallenPetal.className = 'fallen-petal-item';
+        fallenPetal.style.left = (20 + (4 - currentPetals) * 20) + '%';
+        fallenPetalContainer.appendChild(fallenPetal);
+
+        petalsCountEl.textContent = currentPetals;
+        roseStageText.textContent = stagesInfo[4 - currentPetals];
+      } else if (currentPetals === 1) {
+        currentPetals = 0;
+        const centerPetal = document.querySelector('.petal-center');
+        if (centerPetal) {
+          centerPetal.style.opacity = '0';
+          centerPetal.style.transform = 'translateY(80px)';
+        }
+
+        const fallenPetal = document.createElement('div');
+        fallenPetal.className = 'fallen-petal-item';
+        fallenPetal.style.left = '50%';
+        fallenPetalContainer.appendChild(fallenPetal);
+
+        petalsCountEl.textContent = "0";
+        roseStageText.textContent = stagesInfo[4];
+        dropPetalBtn.disabled = true;
+        dropPetalBtn.style.opacity = '0.5';
+      }
+    });
+
+    resetRoseBtn.addEventListener('click', () => {
+      currentPetals = 4;
+      petalsCountEl.textContent = "4";
+      roseStageText.textContent = stagesInfo[0];
+      fallenPetalContainer.innerHTML = '';
+
+      dropPetalBtn.disabled = false;
+      dropPetalBtn.style.opacity = '1';
+
+      petalElements.forEach(petal => {
+        if (petal) {
+          petal.style.opacity = '1';
+          petal.style.transform = 'none';
+        }
+      });
+      const centerPetal = document.querySelector('.petal-center');
+      if (centerPetal) {
+        centerPetal.style.opacity = '1';
+        centerPetal.style.transform = 'none';
+      }
+    });
+
+    // 3. CÁLCULO AUTOMÁTICO DO QUIZ
+    const submitQuizBtn = document.getElementById('submit-quiz-btn');
+    const restartQuizBtn = document.getElementById('restart-quiz-btn');
+    const quizResultBox = document.getElementById('quiz-result');
+    const resultTitle = document.getElementById('result-title');
+    const resultDesc = document.getElementById('result-desc');
+
+    const resultsData = {
+      A: {
+        title: "📖 Você é: Bela!",
+        desc: "Você é uma pessoa curiosa, inteligente e sonhadora. Valoriza a sabedoria, lê o mundo com sensibilidade e não se deixa levar por aparências ou opiniões alheias."
+      },
+      B: {
+        title: "🥀 Você é: A Fera!",
+        desc: "Você tem um coração forte, protetor e uma enorme capacidade de evolução pessoal. Aprende com os erros e possui uma grande nobreza interior."
+      },
+      C: {
+        title: "🕯️ Você é: Lumière!",
+        desc: "Você é extremamente cativante, otimista, alegre e carismático! Tem o dom de iluminar o ambiente e tornar qualquer momento especial para quem está ao redor."
+      },
+      D: {
+        title: "☕ Você é: Madame Samovar / Zip!",
+        desc: "Você é uma pessoa acolhedora, carinhosa, gentil e extremamente dedicada aos seus entes queridos. Traz conforto e afeição para onde quer que vá."
+      }
+    };
+
+    submitQuizBtn.addEventListener('click', () => {
+      const form = document.getElementById('quiz-form');
+      const counts = { A: 0, B: 0, C: 0, D: 0 };
+      let answeredCount = 0;
+
+      for (let i = 1; i <= 4; i++) {
+        const selected = form.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) {
+          counts[selected.value]++;
+          answeredCount++;
+        }
+      }
+
+      if (answeredCount < 4) {
+        alert("Por favor, responda a todas as 4 perguntas para ver seu resultado encantado!");
+        return;
+      }
+
+      let maxOption = 'A';
+      let maxCount = counts.A;
+
+      ['B', 'C', 'D'].forEach(opt => {
+        if (counts[opt] > maxCount) {
+          maxCount = counts[opt];
+          maxOption = opt;
+        }
+      });
+
+      resultTitle.textContent = resultsData[maxOption].title;
+      resultDesc.textContent = resultsData[maxOption].desc;
+
+      quizResultBox.classList.remove('hidden');
+      quizResultBox.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    restartQuizBtn.addEventListener('click', () => {
+      document.getElementById('quiz-form').reset();
+      quizResultBox.classList.add('hidden');
+      document.getElementById('Quiz').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 
     <footer>
         <a href="https://www.disneyplus.com/">Filme Live Action (2017)</a>
     </footer>
-
-</main>
 
 </body>
 </html>
