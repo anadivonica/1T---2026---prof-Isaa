@@ -683,3 +683,38 @@ footer {
     left: 15px;
   }
 }
+/* ==========================================================================
+   ESTILO DISCRETO E ELEGANTE DO RODAPÉ
+   ========================================================================== */
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(244, 207, 102, 0.2); /* Linha dourada bem sutil */
+  background: linear-gradient(180deg, rgba(13, 18, 34, 0), rgba(10, 13, 24, 0.8));
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid rgba(244, 207, 102, 0.3);
+  border-radius: 20px;
+  background: rgba(244, 207, 102, 0.05);
+  transition: all 0.3s ease;
+}
+
+.site-footer a:hover {
+  background: rgba(244, 207, 102, 0.15);
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 207, 102, 0.15);
+}
