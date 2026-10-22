@@ -14,9 +14,10 @@
 /* Rolagem suave */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 20px;
 }
 
-/* Estilo geral da página */
+/* Estilo geral */
 body {
     font-family: Georgia, "Times New Roman", serif;
     background-color: #f8f3e8;
@@ -57,7 +58,7 @@ section {
     margin-bottom: 35px;
 }
 
-/* Títulos das seções */
+/* Títulos */
 h2 {
     color: #762743;
     font-size: clamp(1.5rem, 3vw, 2.1rem);
@@ -83,7 +84,8 @@ p {
 }
 
 /* Listas */
-ul {
+ul,
+ol {
     padding-left: 28px;
     margin: 12px 0 20px;
 }
@@ -93,7 +95,7 @@ li {
     margin-bottom: 8px;
 }
 
-/* Todas as imagens */
+/* Imagens */
 img {
     display: block;
     max-width: 100%;
@@ -103,7 +105,7 @@ img {
     box-shadow: 0 5px 16px rgba(60, 35, 20, 0.14);
 }
 
-/* Imagem de destaque */
+/* Imagem principal */
 .imagem-principal {
     width: 100%;
     max-width: 750px;
@@ -112,7 +114,20 @@ img {
     background-color: #eee4d3;
 }
 
-/* Cartões dos personagens */
+/* Legendas de imagens */
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+figcaption {
+    color: #875b24;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Cartões expansíveis */
 details {
     margin: 18px 0;
     padding: 20px;
@@ -124,12 +139,10 @@ details {
     transition: box-shadow 0.25s ease;
 }
 
-/* Efeito ao passar o mouse */
 details:hover {
     box-shadow: 0 5px 16px rgba(60, 35, 20, 0.12);
 }
 
-/* Nome clicável dos personagens */
 summary {
     color: #762743;
     font-size: 1.2rem;
@@ -138,18 +151,10 @@ summary {
     padding: 4px 0;
 }
 
-/* Espaço entre o título e as informações abertas */
 details[open] summary {
     margin-bottom: 18px;
     padding-bottom: 12px;
     border-bottom: 1px solid #eadcc3;
-}
-
-/* Destaque do teclado */
-summary:focus-visible,
-a:focus-visible {
-    outline: 3px solid #b58b42;
-    outline-offset: 4px;
 }
 
 /* Links */
@@ -165,7 +170,229 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Rodapé */
+/* Foco acessível */
+a:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #b58b42;
+    outline-offset: 4px;
+}
+
+/* ========================================
+   NOVA IMPLEMENTAÇÃO: ROSA ENCANTADA
+======================================== */
+
+#rosa-encantada {
+    padding: 28px;
+    background: linear-gradient(
+        145deg,
+        #fffdf8,
+        #f3e5d5
+    );
+    border: 2px solid #d5b56a;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(60, 16, 39, 0.09);
+}
+
+#rosa-encantada h2 {
+    color: #762743;
+}
+
+#rosa-encantada figure img {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #d5b56a;
+    border-radius: 14px;
+}
+
+#rosa-encantada table {
+    width: 100%;
+    margin: 22px 0;
+    border-collapse: collapse;
+    background-color: #fffdf8;
+    border: 1px solid #d5b56a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#rosa-encantada th {
+    background-color: #6e1836;
+    color: #f5d989;
+    font-weight: bold;
+    text-align: center;
+}
+
+#rosa-encantada th,
+#rosa-encantada td {
+    padding: 12px;
+    border: 1px solid #e5d4b2;
+    vertical-align: middle;
+}
+
+#rosa-encantada td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: #762743;
+}
+
+#rosa-encantada td:nth-child(2) {
+    text-align: center;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+#rosa-encantada tr:nth-child(even) {
+    background-color: #f8f0e4;
+}
+
+#rosa-encantada details {
+    background-color: #fffdf8;
+    border-left-color: #762743;
+}
+
+/* ========================================
+   NOVA IMPLEMENTAÇÃO: QUIZ
+======================================== */
+
+#quiz {
+    padding: 28px;
+    background: linear-gradient(
+        145deg,
+        #fffdf8,
+        #f2e4d4
+    );
+    border: 2px solid #d5b56a;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(60, 16, 39, 0.09);
+}
+
+#quiz > h2 {
+    color: #762743;
+}
+
+#quiz > p:first-of-type {
+    padding: 15px;
+    background-color: #fff8e9;
+    border-left: 4px solid #b58b42;
+    border-radius: 6px;
+}
+
+/* Blocos das perguntas */
+#quiz fieldset {
+    margin: 22px 0;
+    padding: 20px;
+    background-color: #fffdf8;
+    border: 1px solid #e5d4b2;
+    border-left: 5px solid #b58b42;
+    border-radius: 10px;
+}
+
+/* Título de cada pergunta */
+#quiz legend {
+    padding: 5px 10px;
+    color: #762743;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+/* Alternativas */
+#quiz input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    margin: 10px 8px 10px 2px;
+    accent-color: #762743;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#quiz label {
+    display: inline;
+    cursor: pointer;
+    line-height: 1.8;
+}
+
+#quiz label:hover {
+    color: #8b2948;
+}
+
+/* Destaque da alternativa selecionada */
+#quiz input[type="radio"]:checked + label {
+    color: #762743;
+    font-weight: bold;
+}
+
+/* Título dos resultados */
+#quiz > h3 {
+    margin-top: 32px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d5b56a;
+}
+
+/* Cartões dos resultados */
+#quiz details {
+    background-color: #fffdf8;
+    border-left-color: #762743;
+}
+
+#quiz details[open] {
+    background-color: #fff9ed;
+}
+
+#quiz details img {
+    width: 100%;
+    max-width: 200px;
+    border: 2px solid #e5d4b2;
+    border-radius: 12px;
+}
+
+/* Mensagem de empate */
+#quiz > p:last-child {
+    margin-top: 24px;
+    padding: 15px;
+    background-color: #f3e5d5;
+    border-radius: 8px;
+}
+
+/* Formulários em geral */
+input,
+button {
+    font: inherit;
+}
+
+/* ========================================
+   NAVEGAÇÃO POR ÂNCORAS
+======================================== */
+
+nav {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fffdf8;
+    border: 1px solid #e5d4b2;
+    border-radius: 12px;
+}
+
+nav h2 {
+    font-size: 1.3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
 footer {
     text-align: center;
     margin-top: 40px;
@@ -189,7 +416,6 @@ footer a:hover {
 ======================================== */
 
 @media (max-width: 768px) {
-
     body {
         font-size: 16px;
         line-height: 1.75;
@@ -223,6 +449,20 @@ footer a:hover {
         font-size: 1.1rem;
         padding: 6px 0;
     }
+
+    #rosa-encantada,
+    #quiz {
+        padding: 22px;
+    }
+
+    #rosa-encantada th,
+    #rosa-encantada td {
+        padding: 10px 8px;
+    }
+
+    #quiz fieldset {
+        padding: 16px;
+    }
 }
 
 /* ========================================
@@ -230,7 +470,6 @@ footer a:hover {
 ======================================== */
 
 @media (max-width: 480px) {
-
     body {
         font-size: 16px;
         line-height: 1.7;
@@ -300,8 +539,59 @@ footer a:hover {
         margin-bottom: 14px;
     }
 
-    ul {
+    ul,
+    ol {
         padding-left: 23px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #rosa-encantada,
+    #quiz {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    /* Tabela adaptada para telas estreitas */
+    #rosa-encantada table {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    #rosa-encantada th,
+    #rosa-encantada td {
+        padding: 8px 5px;
+        overflow-wrap: anywhere;
+    }
+
+    #rosa-encantada td:nth-child(2) {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+
+    #quiz fieldset {
+        padding: 12px;
+        margin: 17px 0;
+    }
+
+    #quiz legend {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    #quiz input[type="radio"] {
+        margin-right: 6px;
+    }
+
+    #quiz label {
+        font-size: 0.95rem;
     }
 
     footer {
@@ -327,5 +617,3 @@ footer a:hover {
         animation-iteration-count: 1 !important;
     }
 }
-
-
